@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="aqua">
+        <h3>Оставить заявку</h3>
+        <div class="dynamicform">
+            <label for="">
+                Имя:
+                <input type="text">
+            </label>
+            <label for="">
+                Возраст:
+                <input type="number" name="age">
+            </label>
+            <label for="">
+                Предмет:
+                <select name="subject" id="subject" oninput="codeDetector()">
+                    <option value="none">Выберите предмет</option>
+                    <option value="IT">IT</option>
+                    <option value="ENGLISH">ENGLISH</option>
+                    <option value="MATH">MATH</option>
+                </select>
+            </label>
+            <label for="">
+                Учебный центр :
+                <input type="text" name="coursname">
+            </label>
+            <label for="">
+                Цена:
+                <input type="number" name="cost" oninput="codeDetector1()">
+            </label>
+            <label for="">
+                <input type="checkbox" id="confirm" onchange="activeBtn()">
+                Подтвердите выбранный курс
+            </label>
+            <button disabled>Отправить</button>
+    </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>

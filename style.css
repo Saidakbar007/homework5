@@ -8,12 +8,12 @@ body{
 }
 .aqua{
     width: 600px;
-    background-color: aqua;
+    background-color: black;
     padding: 20px 40px;
     margin: 100px auto 100px;
 }
 h3{
-    color:blue ;
+    color:red;
 }
 span{
     display: block;
